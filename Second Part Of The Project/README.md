@@ -1,6 +1,8 @@
-# ASW
-Repository per il progetto di gruppo per l'esame di Architetture Software.
+# ASW - Seconda parte del progetto
+Repository del progetto di gruppo per l'esame di Architetture Software.
 Fork di https://github.com/valeita/asw
+
+
 
 ## Build :
 

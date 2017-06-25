@@ -1,0 +1,9 @@
+# application.yml
+--- 
+spring:
+  application: 
+    name: course
+facInfo: 180,150,178
+couInfo: 6,9,12,15
+server: 
+  port: 8083

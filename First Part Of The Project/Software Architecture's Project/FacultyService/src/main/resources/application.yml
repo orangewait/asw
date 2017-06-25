@@ -1,0 +1,11 @@
+# application.yml
+--- 
+spring: 
+  application: 
+    name: faculty
+facInfo: 15,13,12
+uniInfo: 17,43,24,78,6
+server: 
+  port: 8082
+  
+

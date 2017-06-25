@@ -1,0 +1,11 @@
+# application.yml 
+--- 
+spring: 
+  application: 
+    name: infoUni
+info: 
+  university.uri: http://localhost:8081/university/ 
+  faculty.uri: http://localhost:8082/faculty/ 
+  course.uri: http://localhost:8083/course/ 
+server:
+  port: 8080

@@ -1,0 +1,13 @@
+# application.yml
+--- 
+spring: 
+  application: 
+    name: faculty
+facultyInfo: 15,13,12
+universityInfo: 17,43,24,78,6
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+server: 
+  port: ${PORT:${SERVER_PORT:0}}

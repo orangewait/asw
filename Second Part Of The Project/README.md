@@ -38,8 +38,8 @@ Con le graffe non veniva riconosciuto da Hystrix che al suo posto invocava il me
 Va dichiarata una variabile interfaccia, non la sua implementazione.
 
 * Nota : In xxxServiceController.java i @RequestMapping(value={a}/{b}/{c}) sono semplici segnaposto, ovvero indicano che quel sottoservizio richiede un certo numero di parametri e non il loro valore.
-C'era un problema di mapping fra il servizio principale e i vari sottoservizi. Tutti i @RequestMapping dentro xxxServiceController.java sono stati riportati nella forma che avevano i sottoservizi nel primo progetto (), evitando così ad hystrix di invocare i metodi di fallback.
-Sono stati lasciati intatti i vari @RequestMapping in ServiceClient/xxxService.java
+C'era un problema di mapping fra il servizio principale e i vari sottoservizi. Tutti i @RequestMapping dentro xxxServiceController.java sono stati riportati nella forma che avevano i sottoservizi nel primo progetto ( vedi i [casi d'uso](https://github.com/zubiak/asw/tree/master/First%20Part%20Of%20The%20Project) ), evitando così ad hystrix di invocare i metodi di fallback.
+Non sono stati modificati i vari @RequestMapping in ServiceClient/xxxService.java
 
 * Ho quache dubbio sull'uso di zuul visto che da nessuna parte abbiamo URI nella forma. http://localhost:8080/info/university/anno 
 

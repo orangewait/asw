@@ -28,8 +28,8 @@ In alternativa lanciare manualmente ```./run-service-xxx``` in ogni sottocartell
 
 * Hystrix non è magico ma va magicamente a pescare i metodi dentro i xxxServiceController.java
 
-* EurekaService dava un sacco di errori perchè ogni server eureka è anche un client eureka, e come ogni client che non conosce il proprio server, sputa errori.
-È stato sufficiente modificare application.yml seguendo le indicazioni per la modalità in standalone sul sito 
+* EurekaService dava un sacco di errori perchè [ogni server Eureka è anche un client Eureka](http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.htm), e come ogni client che non conosce il proprio server, sputa errori.
+È stato sufficiente modificare application.yml seguendo le indicazioni per la [modalità in standalone](http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html#_standalone_mode) sul sito di SpringCloud.
 
 * In UniversityClient.java ho cambiato il @RequestMapping levando le parentesi graffe attorno a university.
 Con le graffe non veniva riconosciuto da Hystrix che al suo posto invocava il metodo di fallback 

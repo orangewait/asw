@@ -46,3 +46,5 @@ Non sono stati modificati i vari @RequestMapping in ServiceClient/xxxService.jav
 * Ho quache dubbio sull'uso di zuul visto che da nessuna parte abbiamo URI nella forma. http://localhost:8080/info/university/anno 
 
 Se, come sembra, ora i singoli servizi funzionano per bene...domani potremo divertirci con docker e lo swarm
+
+* Si riesce ad accedere ad un servizio in un container impostando la stessa porta X sia in application.yml ( server_port ) che in Dockerfile ( EXPOSE X ) ed avviando il container con ``` docker run -p portaHost:X nome-immagine```

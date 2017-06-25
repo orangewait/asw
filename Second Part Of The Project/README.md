@@ -4,6 +4,7 @@ Repository di Architetture Software
 ## Build :
 
 Posizionarsi nella cartella principale :
+
 ``` cd asw/Second\ Part\ Of\ The\ Project/rilascio/Software\ Architecture\'s\ Project/ ```
 
 Fare il gradle clean di tutti i servizi :

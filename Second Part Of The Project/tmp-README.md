@@ -46,7 +46,7 @@ Il servizio principale, *InfoUniService* è esposto sulla porta 8080 dell'host, 
 
 ### Note
 
-Il codice relativo a Eureka e Ribbon nel servizio principale *InfoUniService* è stato volontariamente commentato ( e non rimosso ) per lasciare traccia del nostro lavoro, come richiesto dalle specifiche.
+Il codice relativo a Eureka e Ribbon nel servizio principale *InfoUniService* è stato volontariamente commentato (e non rimosso) per lasciare traccia del nostro lavoro, come richiesto dalle specifiche.
 Infatti il codice del primo progetto è stato modificato e sviluppato includendo incrementalmente le varie tecnologie, pur sapendo in anticipo che l'utilizzo di Feign le avrebbe reso superflue. <span style="color:red">**(QUA FORSE È MEGLIO FARE RIFERIMENTO PROPRIO A RIBBON. EUREKA INVECE?)**</span>
 
 ### Struttura (cartelle)
@@ -57,6 +57,8 @@ Al suo interno sono presenti cinque cartelle:
 * "InfoUniService", contenente il servizio principale dell'applicazione.
 * "CourseService","FacultyService","UniversityService", ciascuna contenente l'omonimo servizio.
 * "EurekaService", contenente il server Eureka.
+---
+
 
 
 ## Build
@@ -72,6 +74,9 @@ Lo script `./build-all-projects.sh` lancia `gradle build` in ognuna di esse.
 Lo script `./build-all-images.sh` lancia `docker build` in ogni cartella.
 
 <span style="color:red">**(QUI DOVREMMO DIRE CHE LE APPLICAZIONI COMPILATE POSSONO FUNZIONARE ANCHE PER CONTO LORO, IN LOCALE. IDEM PER LE IMMAGINI DOCKER. E POI MAGARI DOVREMMO AGGIUNGERE CHE USIAMO `./push-all-images.sh` e `./start...sh` e `./stop...sh` PER PUSHARE, AVVIARE E STOPPARE I SERVIZI SULLO SWARM)**</span>
+
+---
+
 
 
 ## Uso dei Servizi

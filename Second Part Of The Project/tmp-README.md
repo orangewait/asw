@@ -59,15 +59,15 @@ Al suo interno sono presenti cinque cartelle:
 * "EurekaService", contenente il server Eureka.
 
 
-##Build
+## Build
 
-###Compilare ogni servizio
+### Compilare ogni servizio
  
 Ogni servizio ha un'omonima cartella all'interno di *Software Architecture's Project*. 
 
 Lo script `./build-all-projects.sh` lancia `gradle build` in ognuna di esse.
 
-###Creare le immagini docker
+### Creare le immagini docker
 
 Lo script `./build-all-images.sh` lancia `docker build` in ogni cartella.
 

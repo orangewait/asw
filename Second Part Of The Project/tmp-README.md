@@ -23,7 +23,7 @@ Sono state utilizzate alcune librerie del progetto Spring Cloud Netflix, quali:
 * **Eureka** — fornisce funzionalità di service discovery.
 * **Ribbon** — fornisce funzionalità di load balancing.
 * **Feign** — semplifica la gestione nel codice delle chiamate REST.
-* **Hystrix** — un'implementazione del pattern circuit breaker; fornisce gestire eventuali fallimenti dei servizi.
+* **Hystrix** — un'implementazione del pattern circuit breaker; permette di gestire agevolmente eventuali fallimenti dei servizi.
 * **Zuul** — semplifica il mapping tra path/URI dei servizi 
 
 <!--
